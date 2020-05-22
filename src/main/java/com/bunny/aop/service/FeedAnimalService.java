@@ -16,4 +16,8 @@ public class FeedAnimalService {
     public void pet() throws Exception {
         pot.petAnimal();
     }
+
+    public void query() {
+        pot.queryAnimal();
+    }
 }

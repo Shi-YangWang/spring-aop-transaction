@@ -13,8 +13,6 @@ public class LogExecutor {
 
     @Around("execution(public void com.bunny.aop.worker.Pot.feedAnimal()) || execution(public void com.bunny.aop.worker.Pot.petAnimal())")
     public Object log(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-//        System.out.println("before feed animal");
-//        return proceedingJoinPoint.proceed();
         int numAttempts = 0;
         Exception exception;
         do {

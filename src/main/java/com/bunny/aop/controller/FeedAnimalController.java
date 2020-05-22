@@ -21,4 +21,10 @@ public class FeedAnimalController {
         service.pet();
         return "200 ok";
     }
+
+    @GetMapping("/animal/query")
+    public String query() throws Exception {
+        service.query();
+        return "200 ok";
+    }
 }
